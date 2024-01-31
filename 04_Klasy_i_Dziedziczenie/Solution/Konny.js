@@ -1,10 +1,8 @@
-import Wojownik from "./Wojownik";
+const Wojownik = require("./Wojownik");
 
-class Konny extends Wojownik {
+module.exports =  class Konny extends Wojownik {
     constructor(name, age) {
         super(name, age);
         this.weapon = "lance";
     }
 }
-
-export default Konny;

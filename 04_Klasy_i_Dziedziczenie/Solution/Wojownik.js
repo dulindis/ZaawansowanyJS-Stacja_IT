@@ -1,4 +1,4 @@
-class Wojownik {
+module.exports = class Wojownik {
     constructor(name, age) {
         this.name = name;
         this.age = age;
@@ -17,5 +17,3 @@ class Wojownik {
         return this;
     }
 }
-
-export default Wojownik;

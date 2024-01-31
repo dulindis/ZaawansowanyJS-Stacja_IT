@@ -1,8 +1,8 @@
-import Piechur from "./Piechur";
-import Strzelec from "./Strzelec";
-import Konny from "./Konny";
+const Piechur = require("./Piechur");
+const Strzelec = require("./Strzelec");
+const Konny = require("./Konny");
 
-class Garnizon {
+module.exports = class Garnizon {
     createSoldier(type, name, age) {
         switch (type) {
             case "piechur": {
@@ -20,5 +20,3 @@ class Garnizon {
         }
     }
 }
-
-export default Garnizon;

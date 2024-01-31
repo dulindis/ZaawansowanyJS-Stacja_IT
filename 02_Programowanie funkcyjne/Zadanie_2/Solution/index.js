@@ -16,4 +16,4 @@ const sum = returnSum(evenNumbers);
 const multiScore = multipyScore(sum);
 isBig(multiScore, 99);
 
-
+isBig(multipyScore(returnSum(returnEven(numbers))), 99);

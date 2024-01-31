@@ -7,11 +7,11 @@ class BankAccount {
         this.#balance = balance;
     }
 
-    get balance() {
+    get getBalance() {
         return this.#balance;
     }
 
-    set balance(newBalance) {
+    set #setBalance(newBalance) {
         if (newBalance >= 0) {
             this.#balance = newBalance;
         } else {
@@ -39,3 +39,5 @@ class BankAccount {
         console.log(`Numer konta: ${this.#accountNumber}, Saldo: ${this.#balance}`);
     }
 }
+
+export default BankAccount;

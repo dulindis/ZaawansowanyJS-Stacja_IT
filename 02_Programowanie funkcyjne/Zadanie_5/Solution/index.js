@@ -24,8 +24,13 @@ const goOutdoor = (name, month) => {
     seasons.set("listopad", "fall");
     seasons.set("grudzień", "winter");
 
-    const actualSeason = seasons.get(month);
-    console.log(actualSeason);
+    const actualSeason = seasons.get(month.toLowerCase());
+    //console.log(actualSeason);
+    //console.log(actualSeason, "actualSeason");
+    if (!actualSeason) {
+        return false;
+    }
+
     const actions = {
         "winter": () => console.log(`${name} jeździ na sankach.`),
         "spring": () => console.log(`${name} chodzi po kałużach.`),
@@ -37,3 +42,4 @@ const goOutdoor = (name, month) => {
 
 goOutdoor("Ala", "styczeń");
 goOutdoor("Ala", "lipiec");
+console.log(goOutdoor("Ala", "inna wartość"));
